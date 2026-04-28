@@ -96,3 +96,6 @@ pdf.multi_cell(0, 10, text=diseño_final)
 pdf.output("/home/pimen0106/Downloads/Factura_PimenCorp.pdf")
 
 print("¡Factura PDF generada con éxito en Descargas!")
+
+
+#comentarios finales: la verdad me tarde bastante haciendolo, y me quedo medio desordenado, pero finalmente salio.
