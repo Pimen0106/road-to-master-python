@@ -9,7 +9,17 @@ gatorade_id = 3
 router_precio = 50
 cableLan_precio = 5
 gatorade_precio = 0.50
-
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
 print("Gracias por comprar en PimenCorp!, a continuacion desarrollaremos su factura.")
 nombre = input("Nombre del cliente: ")
 apellido = input("Apellido del cliente: ")
@@ -47,4 +57,11 @@ IVA (15%):         ${impuestos:.2f}
 TOTAL A PAGAR:     ${subtotal + impuestos:.2f}
 ========================================""")
 print("")
+print("")
 print("Muchas gracias por comprar con nosotros!, Vuelva pronto!")
+print("")
+print("")
+print("")
+print("")
+print("")
+print("")
