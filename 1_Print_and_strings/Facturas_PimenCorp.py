@@ -12,5 +12,5 @@ gatorade_precio = 0.50
 nombre = input("Nombre del cliente: ")
 apellido = input("Apellido del cliente: ")
 fecha = input(f"Fecha de la compra: ")
-item = input("ID del item adquirido: ")
-hora_instalacion = input("Horas de instalacion: ")
+precio_item = input("Precio del item adquirido: ")
+hora_instalacion = int(input("Horas de instalacion: "))
