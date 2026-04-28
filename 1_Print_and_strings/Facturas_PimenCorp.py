@@ -3,6 +3,8 @@ OBJETIVO GENERAL DEL PROYECTO:
     GENERAR UNA FACTURA EN FORMATO PDF PARA UNA COMPAÑIA FICTICIA CON DATOS, VARIABLES Y CALCULACIONES DE IMPUESTOS AÑADIDOS.
 """
 
+from fpdf import FPDF
+
 router_id = 1
 cableLAN_id = 2
 gatorade_id = 3
@@ -65,3 +67,32 @@ print("")
 print("")
 print("")
 print("")
+
+
+diseño_final = f"""
+****************************************
+         PIMENCORP S.A.
+****************************************
+Cliente: {nombre} {apellido}
+Fecha:   {fecha}
+----------------------------------------
+Item:    {item}
+Cant:    {unidades}
+----------------------------------------
+Subtotal:  ${subtotal:.2f}
+IVA 15%:   ${impuestos:.2f}
+TOTAL:     ${subtotal + impuestos:.2f}
+****************************************
+"""
+
+
+
+pdf = FPDF()
+pdf.add_page()
+pdf.set_font("Courier", size=10)
+
+pdf.multi_cell(0, 10, text=diseño_final)
+
+pdf.output("/home/pimen0106/Downloads/Factura_PimenCorp.pdf")
+
+print("¡Factura PDF generada con éxito en Descargas!")
